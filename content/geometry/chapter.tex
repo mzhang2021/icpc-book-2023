@@ -9,34 +9,55 @@
 	\kactlimport{sideOf.h}
 	\kactlimport{OnSegment.h}
 	\kactlimport{linearTransformation.h}
-	% \kactlimport{LineProjectionReflection.h}
+	\kactlimport{LineProjectionReflection.h}
 	\kactlimport{Angle.h}
 
 \section{Circles}
 	\kactlimport{CircleIntersection.h}
 	\kactlimport{CircleTangents.h}
-	% \kactlimport{CircleLine.h}
+	\kactlimport{CircleLine.h}
 	\kactlimport{CirclePolygonIntersection.h}
+    \kactlimport{CircleCircleArea.h}
+    \kactlimport{Circle2PointsRadius.h}
+    \kactlimport{CircleUnion.h}
 	\kactlimport{circumcircle.h}
 	\kactlimport{MinimumEnclosingCircle.h}
+    \kactlimport{MaximumCircleCover.h}
+    \kactlimport{MaximumInscribedCircle.h}
 
 \section{Polygons}
 	\kactlimport{InsidePolygon.h}
 	\kactlimport{PolygonArea.h}
 	\kactlimport{PolygonCenter.h}
 	\kactlimport{PolygonCut.h}
-	% \kactlimport{PolygonUnion.h}
+	\kactlimport{PolygonUnion.h}
+    \kactlimport{GeometricMedian.h}
 	\kactlimport{ConvexHull.h}
 	\kactlimport{HullDiameter.h}
+    \kactlimport{HullExtremeVertex.h}
+    \kactlimport{HullPointLineDistance.h}
+    \kactlimport{HullHullMaxDistance.h}
 	\kactlimport{PointInsideHull.h}
 	\kactlimport{LineHullIntersection.h}
+    \kactlimport{HalfPlane.h}
+    \kactlimport{HalfplaneSet.h}
+    \kactlimport{MinimumEnclosingRectangle.h}
 
 \section{Misc. Point Set Problems}
 	\kactlimport{ClosestPair.h}
-	% \kactlimport{ManhattanMST.h}
+	\kactlimport{ManhattanMST.h}
 	\kactlimport{kdTree.h}
-	% \kactlimport{DelaunayTriangulation.h}
+	\kactlimport{DelaunayTriangulation.h}
 	\kactlimport{FastDelaunay.h}
+    Properties of Delaunay Triangulation:
+    \begin{itemize}
+        \item Maximizes the minimum angle in the triangles among all possible triangulations.
+        \item The Euclidean MST is a subset of Delaunay edges.
+        \item The dual is the Voronoi diagram, obtained by taking the circumcenter of the circumcircle of each Delaunay triangle.
+        \item There are 3 edges jutting out of each point of the Voronoi diagram, perpendicular to the 3 triangle edges it is a circumcenter of.
+        \item The region bounded by Voronoi edges enclosing a given Delaunay point is the region where that Delaunay point is closer than any other point.
+        \item Nearest neighbor in set queries can therefore be answered by computing the Voronoi diagram of the set and doing a line sweep.
+    \end{itemize}
 
 \section{3D}
 	\kactlimport{PolyhedronVolume.h}

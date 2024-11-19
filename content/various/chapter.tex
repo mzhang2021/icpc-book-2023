@@ -1,14 +1,16 @@
 \chapter{Various}
 
-\section{Intervals}
-	\kactlimport{IntervalContainer.h}
-	\kactlimport{IntervalCover.h}
-	\kactlimport{ConstantIntervals.h}
+% \section{Intervals}
+% 	\kactlimport{IntervalContainer.h}
+% 	\kactlimport{IntervalCover.h}
+% 	\kactlimport{ConstantIntervals.h}
 
 \section{Misc. algorithms}
-	\kactlimport{TernarySearch.h}
-	\kactlimport{LIS.h}
+	% \kactlimport{TernarySearch.h}
+	% \kactlimport{LIS.h}
 	\kactlimport{FastKnapsack.h}
+    \kactlimport{SubsetConvolution.h}
+    \kactlimport{CountLatticePoints.h}
 
 \section{Dynamic programming}
 	\kactlimport{KnuthDP.h}
@@ -28,6 +30,7 @@
 		\begin{itemize}
 			\item \verb@x & -x@ is the least bit in \texttt{x}.
 			\item \verb@for (int x = m; x; ) { --x &= m; ... }@ loops over all subset masks of \texttt{m} (except \texttt{m} itself).
+            \item \verb@for (int x = m; x < 1 << K; x = (x + 1) | m)@ loops over all superset masks of \texttt{m}.
 			\item \verb@c = x&-x, r = x+c; (((r^x) >> 2)/c) | r@ is the next number after \texttt{x} with the same number of bits set.
 			\item \verb@rep(b,0,K) rep(i,0,(1 << K))@ \\ \verb@  if (i & 1 << b) D[i] += D[i^(1 << b)];@ computes all sums of subsets.
 		\end{itemize}
@@ -39,8 +42,8 @@
 		\end{itemize}
 	\kactlimport{FastMod.h}
 	\kactlimport{FastInput.h}
-	\kactlimport{BumpAllocator.h}
-	\kactlimport{SmallPtr.h}
-	\kactlimport{BumpAllocatorSTL.h}
+	% \kactlimport{BumpAllocator.h}
+	% \kactlimport{SmallPtr.h}
+	% \kactlimport{BumpAllocatorSTL.h}
 	% \kactlimport{Unrolling.h}
-	\kactlimport{SIMD.h}
+	% \kactlimport{SIMD.h}
